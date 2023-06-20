@@ -48,6 +48,7 @@ variable "tags" {
         environment = "DEV"
         terraform   = "true"
     }
+}
 variable "vm_root_volume_size" {
   type        = number
   description = "Root Volume size of the EC2 Instance"
@@ -59,4 +60,3 @@ variable "vm_root_volume_type" {
   default     = "gp2"
 }
 
-}
