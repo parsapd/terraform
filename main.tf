@@ -17,6 +17,7 @@ resource "aws_instance" "myFirstInstance" {
     volume_type           = var.vm_root_volume_type
     delete_on_termination = true
     encrypted             = true
+    kms_key_id            = "abc3d3d9-f67b-4a70-9137-676d6775796f"
   }
 }
 
