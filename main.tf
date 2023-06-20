@@ -12,5 +12,11 @@ resource "aws_instance" "myFirstInstance" {
   tags= {
     Name = var.tag_name
   }
+  root_block_device {
+    volume_size           = var.vm_root_volume_size
+    volume_type           = var.vm_root_volume_type
+    delete_on_termination = true
+    encrypted             = true
+  }
 }
 
