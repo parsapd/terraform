@@ -52,7 +52,7 @@ variable "tags" {
 variable "vm_root_volume_size" {
   type        = number
   description = "Root Volume size of the EC2 Instance"
-  default     = "50"
+  default     = "100"
 }
 variable "vm_root_volume_type" {
   type        = string
