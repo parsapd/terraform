@@ -15,7 +15,7 @@ variable "instance_type" {
 
 variable "security_group" { 
     description = "Name of security group" 
-    default     = "sgrp-amer-infrastructure-default-sgrp" 
+    default     = "sg-0aa1b4db6c68157fb" 
 }
 
 variable "tag_name" { 
